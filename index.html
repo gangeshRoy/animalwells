@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<p>Today's welcome message is:</p>
+
+<!-- <h1 >{{myWelcome}}</h1> -->
+<table >
+    <tr ng-repeat="x in myWelcome">
+      <td>{{x.first_name}}</td>
+    </tr>
+    </table>
+</div>
+
+<p>The $http service requests a page on the server, and the response is set as the value of the "myWelcome" variable.</p>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+  $http({
+    method : "GET",
+    url : "http://localhost:8080/getListAnimal"
+  }).then(function mySuccess(response) {
+      $scope.myWelcome = response.data;
+    }, function myError(response) {
+      $scope.myWelcome = response.statusText;
+  });
+});
+</script>
+
+</body>
+</html>

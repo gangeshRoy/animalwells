@@ -7,7 +7,7 @@ module.exports = function (app) {
         console.log(req);
         const data = {};
         data.user = "";
-        data.spath = req.protocol + '://' + req.hostname + ':' + port + '/';
+        data.spath = req.protocol + '://' + req.hostname + ':' +8080 + '/';
         data.server = req.hostname;
         data.min = min;
         data.ver = version;
