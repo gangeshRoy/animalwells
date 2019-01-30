@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="en">
+
+<head>
+    <script>
+        var encId = "<%=dt.encId %>";
+        var scPath = "<%=dt.spath %>";         
+    </script>
+    <title>
+        <%=dt.title %>
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no ,maximum-scale=1">
+    <meta name="robots" content="index, follow" />
+    <meta name="distribution" content="global" />
+    <meta name="theme-color" content="#fff">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.14/pulltorefresh.min.js"></script>
+    <script type="text/javascript" src="<%=dt.spath %>js/Precommon<%=dt.min%>.js?v=<%=dt.ver%>"></script>
+    <script type="text/javascript" src="<%=dt.spath %>js/Common<%=dt.min%>.js?v=<%=dt.ver%>"></script>
+    <script type="text/javascript" src="<%=dt.spath %>js/appPre<%=dt.min%>.js?v=<%=dt.ver%>"></script>
+    <script type="text/javascript" rel="preload" src="<%=dt.spath %>js/app<%=dt.min%>.js?v=<%=dt.ver%>"></script>
+
+    <script async>
+        $(function () {
+            setTimeout(function () {
+                if (location.href.indexOf('interest') == -1) {
+                    if (commonPre.readFromStorage('animalwells') && commonPre.readFromStorage('key')) {
+                        if (commonPre.readFromStorage('addJson') && commonPre.readFromStorage('addDate')) {
+                            var app = $('#createBliHtAdd');
+                            angular.element(app).scope().finalAddBLI();
+                        }
+                    }
+                }
+            }, 150)
+        });
+
+    </script>
+    <script type="text/javascript" src="<%=dt.spath %>js/controllers/<%=dt.contrl %>Controller<%=dt.min%>.js?v=<%=dt.ver%>"></script>
+    <%if (dt.server == 'localhost') { %>
+    <link rel="stylesheet" type="text/css" href="<%=dt.spath %>css/main<%=dt.min%>.css?v=<%=dt.ver%>">
+    <link rel="stylesheet" type="text/css" href="<%=dt.spath %>css/common<%=dt.min%>.css?v=<%=dt.ver%>">
+    <link rel="stylesheet" type="text/css" href="<%=dt.spath %>css/adminPage.css?v=<%=dt.ver%>">
+    <% } %>
+    </script>
+    <script>
+        function getLocation() {
+
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                return;
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+
+
+
+
+
+    </script>
+</head>

@@ -1,0 +1,270 @@
+
+ *{   -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.dasboardHeader{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.dasboardMainContainer
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    height:auto;
+}
+.width16{
+    width:14%;
+    }
+.width16{
+width:16%;
+}
+.padding20{
+    padding:20px 20px;
+}
+.row{
+    height:auto;
+    width:100%;
+}
+.column{
+
+    display: inline-flex;
+}
+    .dasboardContainetr{
+        width: 100%;
+        height: auto;
+    }
+    .logo{
+        width: auto;
+        height: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        padding: 15px 0px;
+    }
+    .headerHolder{
+        width:100%;
+        height:100%;
+        overflow: hidden;
+        margin:auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .headerLeft{
+        display: inline-flex;
+        justify-content: flex-start;
+        height: 100%;
+        width: 50%;
+        text-align: center;
+        padding: 10px 0px;
+        font-size: 25px;
+        font-weight: 900;
+
+    }
+    .headerRight{
+        display: inline-flex;
+        justify-content: flex-end;
+        height: 100%;
+        width: 50%;
+        
+
+    }
+    .headerWithSearchHolder{
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
+    }
+    .searchTypecantainer{
+        width: 100%;
+        padding: 30px 10px;
+        height: auto;
+        display: -ms-inline-flexbox;
+        vertical-align: top;
+        background-color: #ffff;
+    }
+    .boxHolder{
+        width:100%;
+        height:auto;
+        padding:10px 10px;
+        align-items: center;
+        display:flex;
+
+    }
+    .boxLabel{
+        width:50%;
+        height:auto;
+        align-items: left;
+
+        
+    }
+    .boxItem{
+        width:50%;
+        height:auto;
+        align-items: right;
+        padding: 5px;
+
+        
+    }
+
+      .selectColumn{
+width:100%;
+      }
+      .select-container .selectColumn {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        margin-right: 20px;
+        font-size: 30px;
+      }
+  .timerow{
+    width: 100%;
+    height: auto;
+    background-color:transparent;
+    position: relative;
+    padding-left: 148px;
+    padding-right: 21px;
+  
+    
+    }
+    .timerow::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  .arrow-image {
+    background: url('../img/image.png');
+    background-color: #cccccc;
+    height: 50px;
+  
+  width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  } 
+  select{
+    border:none;
+  }
+  
+  
+  .select-selected {
+    background-color: #fff;
+  }
+  .select-selected {
+    font-size: 14px;
+    color: #000000 !important;
+    padding: 5px 33px !important;
+  }
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 9px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000000 transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent ;
+    border:none!important;
+    top: 7px;
+  }
+ 
+  .custom-select:after{
+      contain: "";
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;}
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #000000;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  .cantainer{
+   display: flex;
+   
+  background-color:#0c0c35;
+}
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .select-container {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+  }
+  /* .boxItem{margin-right:20px;} */
+  /* .select-container .boxItem {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    margin-right: 20px;
+    font-size: 30px;
+  } */
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }

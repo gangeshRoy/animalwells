@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.5.8/angular.js"></script>
+  <script>
+    var appController = function($scope, $http) {
+      $http.get("http://getListAnimal")
+        .success(function(response) {
+          $scope.Info = response;
+        })
+        .error(function(response) {
+          $scope.message = "Error!!";
+        });
+    }
+  </script>
+</head>
+
+<body>
+  <div ng-app ng-controller="appController">
+    <h3>HOW TO CALL REST API IN ANGULARJS?</h3>
+    <div>
+      IP - {{Info.ip}}
+      <br/> About - {{Info.about}}
+    </div>
+    <span>{{message}}</span>
+  </div>
+  <br/>
+  <div>
+    <a href='http://www.code-sample.com/2014/09/angularjs-documentation.html' target='_blank'>For more..</a>
+  </div>
+</body>
+
+</html>

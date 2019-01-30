@@ -1,0 +1,12 @@
+/* Styles go here */
+.top-panel-tabs{
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .row{
+    position:none;
+  }
+  .container{
+width:100%!important;
+  }

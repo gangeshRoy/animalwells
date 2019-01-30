@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="mainContainer" ng-app="myApp">
+  <div class="header">Animal Transport Dashboard
+
+
+      <div class="logo">
+        <img src="./img/united-airlines-7.svg" alt="Forest" style="width:100%;margin-top: 20px;">
+      </div>
+
+  </div>
+    <label class="labeltext"> Station</label>
+    <div class="collumn">
+      <div class="select-container">
+    <div class="custom-select" style="width:75px;">
+    <!-- <label>amimal</label>   -->
+    <select>
+        <option value="0">Select</option>
+        <option value="1">BLR</option>
+        <option value="2">CCU</option>
+    
+      </select>
+    </div>
+    </div>
+     
+    
+    </div>
+    <label class="labeltext"> Gate</label>
+    <div class="collumn">
+        <div class="select-container">
+      <div class="custom-select" style="width:75px;">
+      <!-- <label>amimal</label>   -->
+      <select>
+          <option value="0">select</option>
+          <option value="1">01</option>
+          <option value="1">02</option>
+          <option value="2">03</option>
+          <option value="3">04</option>
+          <option value="3">05</option>
+      
+        </select>
+      </div>
+      </div>
+       
+      
+      </div>
+     
+    <label class="labeltext"> Pet Type</label>
+    <div class="collumn">
+      <div class="select-container">
+    <div class="custom-select" style="width:75px;">
+    <!-- <label>amimal</label>   -->
+    <select>
+        <option value="0">All Pets</option>
+        <option value="1">etSafe Pets</option>
+        <option value="2">Military Pets</option>
+    
+      </select>
+    </div>
+    </div>
+     
+    
+    </div>
+
+
+    
+    <label class="labeltext">  from Time</label>
+    <div class="collumn fromDate">
+      <div class="select-container">
+    <div class="custom-select" style="width:75px;">
+    <!-- <label>amimal</label>   -->
+    <select>
+        <option value="0">Select</option>
+        <option value="1">8:30 am</option>
+        <option value="2">12:50 pm</option>
+    
+      </select>
+    </div>
+    </div>
+     
+    
+    </div>
+    <label class="labeltext">  To Time</label>
+    <div class="collumn fromDate">
+      <div class="select-container">
+    <div class="custom-select" style="width:75px;">
+    <!-- <label>amimal</label>   -->
+    <select>
+        <option value="0">Select</option>
+        <option value="1">8:30 am</option>
+        <option value="2">12:50 pm</option>
+    
+      </select>
+    </div>
+    </div>
+     
+    
+    </div>
+
+<br/>
+    <label class="labeltext"> From date</label>
+    <div class="collumn fromDate">
+      <div class="select-container">
+    <div class="custom-select" style="width:100px;">
+    <!-- <label>amimal</label>   -->
+    <input type="date" name="dateofbirth" id="dateofbirth">
+    </div>
+   
+     
+    
+    </div>
+  </div>
+    <label class="labeltext"> To date</label>
+    <div class="collumn fromDate">
+      <div class="select-container">
+    <div class="custom-select" style="width:75px;">
+    <!-- <label>amimal</label>   -->
+    <input type="date" name="dateofbirth" id="dateofbirth">
+    </div>
+    </div>
+    </div>
+     
+    
+    </div>
+    
+
+
+    <div class="mainInputContainer">
+    <label class="labeltext"> Flight number</label>
+    <div class="collumn ">
+      <div class="select-container">
+    <div class="custom-select" style="width:75px;">
+    <!-- <label>amimal</label>   -->
+    <input placeholder="search">
+    </div>
+    </div>
+    </div>
+
+
+    <label class="labeltext"> Passenger Name</label>
+    <div class="collumn">
+      <div class="select-container">
+    <div class="custom-select" style="width:75px;">
+    <!-- <label>amimal</label>   -->
+    <input placeholder="search">
+    </div>
+    </div>
+    </div>
+
+    <label class="labeltext"> Bag tag number</label>
+    <div class="collumn">
+      <div class="select-container">
+    <div class="custom-select" style="width:75px;">
+    <!-- <label>amimal</label>   -->
+    <input placeholder="search">
+    </div>
+    </div>
+    </div>
+    <label class="labeltext"> Cargo Airway Bill Number</label>
+    <div class="collumn">
+      <div class="select-container">
+    <div class="custom-select" style="width:75px;">
+    <!-- <label>amimal</label>   -->
+    <input placeholder="search">
+    </div>
+    </div>
+    </div>
+    <label class="labeltext"> User ID</label>
+    <div class="collumn">
+      <div class="select-container">
+    <div class="custom-select" style="width:75px;">
+    <!-- <label>amimal</label>   -->
+    <input placeholder="search">
+    </div>
+    </div>
+    </div>
+
+<div class="buttonHolder">
+    <div class="collumn">
+        <button>Submit</button>
+       
+      
+      </div>
+</div>
+
+</div>
+</div>
+<div class="timerow">
+    <div class="timecolumn" >
+      <h5>01:00</h5>
+    
+    </div>
+    <div class="timecolumn" >
+      <h5>02:00</h5>
+    </div>
+    <div class="timecolumn" >
+      <h5>03:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>04:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>05:00</h5>
+    </div>
+   
+    <div class="timecolumn"  >
+      <h5>06:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>07:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>08:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>09:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>10:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>11:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>12:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>13:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>14:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>15:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>16:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>17:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>18:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>19:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>20:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>21:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>22:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>23:00</h5>
+    </div>
+    <div class="timecolumn"  >
+      <h5>24:00</h5>
+    </div>
+  </div>
+
+  <div class="tooltip">
+      <span class="tooltiptext">Tooltip text</span>
+    </div>
+
+</div>
+  
+  <div class="row">
+    <div class="leftrow">
+      <div class="leftcolumn">
+        <div class="overLayText">UA1011921</div>
+        <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+      </div>
+      <div class="leftcolumn">
+          <div class="overLayText">UA776-15</div>
+          <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+        </div>
+<div class="leftcolumn">
+    <div class="overLayText">IN</div>
+  <!-- <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px"> -->
+</div>
+    </div>
+
+    <div class="rightrow">
+        <a href="./AcceptanceScanView.html" style="text-decoration:none" target="_blank">
+      <div class="column">
+        <div class="tooltip"> Acceptance Scan
+            <!-- <div class="tooltip"> -->
+                <span class="tooltiptext">Tooltip text</span>
+              <!-- </div> -->
+        </div>
+       <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;">
+      <div class="hoverText">give me some infirmation</div>
+      </div>
+      <div class="imageoverlay">
+          <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+      </div>
+      
+    </div>
+    </a>
+    <div class="column">
+        <div class="overLayText">Staging Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Pick-up scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+        <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+      </div>
+      <div class="column">
+          <div class="overLayText"> Drop scan</div>
+          <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText"> Departure scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Staging Scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Pick-up scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+              <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+            </div>
+            <div class="column">
+                <div class="overLayText"> Drop scan</div>
+                <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+              </div>
+              <div class="column">
+                  <div class="overLayText"> Departure scan</div>
+                  <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                  <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                </div>
+         
+        <div class="column">
+            <div class="overLayText">Drop scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText">Departure Scan</div>
+          <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="leftrow">
+      <div class="leftcolumn">
+        <div class="overLayText">UA1011921</div>
+        <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+      </div>
+      <div class="leftcolumn">
+          <div class="overLayText">UA776-15</div>
+          <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+        </div>
+<div class="leftcolumn">
+    <div class="overLayText">IN</div>
+  <!-- <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px"> -->
+</div>
+    </div>
+    <div class="rightrow">
+      <div class="column">
+        <div class="overLayText"> Acceptance Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Staging Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Pick-up scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+        <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+      </div>
+      <div class="column">
+          <div class="overLayText"> Drop scan</div>
+          <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText"> Departure scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Staging Scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Pick-up scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+              <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+            </div>
+            <div class="column">
+                <div class="overLayText"> Drop scan</div>
+                <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+              </div>
+              <div class="column">
+                  <div class="overLayText"> Departure scan</div>
+                  <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                  <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                </div>
+         
+        <div class="column">
+            <div class="overLayText">Drop scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText">Departure Scan</div>
+          <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="leftrow">
+      <div class="leftcolumn">
+        <div class="overLayText">UA1011921</div>
+        <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+      </div>
+      <div class="leftcolumn">
+          <div class="overLayText">UA776-15</div>
+          <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+        </div>
+<div class="leftcolumn">
+    <div class="overLayText">IN</div>
+  <!-- <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px"> -->
+</div>
+    </div>
+    <div class="rightrow">
+      <div class="column">
+        <div class="overLayText"> Acceptance Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Staging Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Pick-up scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+        <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+      </div>
+      <div class="column">
+          <div class="overLayText"> Drop scan</div>
+          <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText"> Departure scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Staging Scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Pick-up scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+              <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+            </div>
+            <div class="column">
+                <div class="overLayText"> Drop scan</div>
+                <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+              </div>
+              <div class="column">
+                  <div class="overLayText"> Departure scan</div>
+                  <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                  <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+                </div>
+         
+        <div class="column">
+            <div class="overLayText">Drop scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText">Departure Scan</div>
+          <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="leftrow">
+      <div class="leftcolumn">
+        <div class="overLayText">UA1011921</div>
+        <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+      </div>
+      <div class="leftcolumn">
+          <div class="overLayText">UA776-15</div>
+          <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+        </div>
+<div class="leftcolumn">
+    <div class="overLayText">IN</div>
+  <!-- <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px"> -->
+</div>
+    </div>
+    <div class="rightrow">
+      <div class="column">
+        <div class="overLayText"> Acceptance Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Staging Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Pick-up scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+        <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+      </div>
+      <div class="column">
+          <div class="overLayText"> Drop scan</div>
+          <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText"> Departure scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Staging Scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Pick-up scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+              <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+            </div>
+            <div class="column">
+                <div class="overLayText"> Drop scan</div>
+                <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+              </div>
+              <div class="column">
+                  <div class="overLayText"> Departure scan</div>
+                  <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                  <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                </div>
+         
+        <div class="column">
+            <div class="overLayText">Drop scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText">Departure Scan</div>
+          <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="leftrow">
+      <div class="leftcolumn">
+        <div class="overLayText">UA1011921</div>
+        <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+      </div>
+      <div class="leftcolumn">
+          <div class="overLayText">UA776-15</div>
+          <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+        </div>
+<div class="leftcolumn">
+    <div class="overLayText">IN</div>
+  <!-- <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px"> -->
+</div>
+    </div>
+    <div class="rightrow">
+      <div class="column">
+        <div class="overLayText"> Acceptance Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Staging Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Pick-up scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+        <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+      </div>
+      <div class="column">
+          <div class="overLayText"> Drop scan</div>
+          <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText"> Departure scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Staging Scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Pick-up scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+              <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+            </div>
+            <div class="column">
+                <div class="overLayText"> Drop scan</div>
+                <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+              </div>
+              <div class="column">
+                  <div class="overLayText"> Departure scan</div>
+                  <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                  <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+                </div>
+         
+        <div class="column">
+            <div class="overLayText">Drop scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText">Departure Scan</div>
+          <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="leftrow">
+      <div class="leftcolumn">
+        <div class="overLayText">UA1011921</div>
+        <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+      </div>
+      <div class="leftcolumn">
+          <div class="overLayText">UA776-15</div>
+          <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+        </div>
+<div class="leftcolumn">
+    <div class="overLayText">IN</div>
+  <!-- <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px"> -->
+</div>
+    </div>
+    <div class="rightrow">
+      <div class="column">
+        <div class="overLayText"> Acceptance Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Staging Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Pick-up scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+        <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+      </div>
+      <div class="column">
+          <div class="overLayText"> Drop scan</div>
+          <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText"> Departure scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Staging Scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Pick-up scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+              <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+            </div>
+            <div class="column">
+                <div class="overLayText"> Drop scan</div>
+                <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+              </div>
+              <div class="column">
+                  <div class="overLayText"> Departure scan</div>
+                  <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                  <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                </div>
+         
+        <div class="column">
+            <div class="overLayText">Drop scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText">Departure Scan</div>
+          <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="leftrow">
+      <div class="leftcolumn">
+        <div class="overLayText">UA1011921</div>
+        <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+      </div>
+      <div class="leftcolumn">
+          <div class="overLayText">UA776-15</div>
+          <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+        </div>
+<div class="leftcolumn">
+    <div class="overLayText">IN</div>
+  <!-- <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px"> -->
+</div>
+    </div>
+    <div class="rightrow">
+      <div class="column">
+        <div class="overLayText"> Acceptance Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Staging Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Pick-up scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+        <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+      </div>
+      <div class="column">
+          <div class="overLayText"> Drop scan</div>
+          <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText"> Departure scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Staging Scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Pick-up scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+              <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+            </div>
+            <div class="column">
+                <div class="overLayText"> Drop scan</div>
+                <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+              </div>
+              <div class="column">
+                  <div class="overLayText"> Departure scan</div>
+                  <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                  <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+                </div>
+         
+        <div class="column">
+            <div class="overLayText">Drop scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText">Departure Scan</div>
+          <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="leftrow">
+      <div class="leftcolumn">
+        <div class="overLayText">UA1011921</div>
+        <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+      </div>
+      <div class="leftcolumn">
+          <div class="overLayText">UA776-15</div>
+          <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+        </div>
+<div class="leftcolumn">
+    <div class="overLayText">IN</div>
+  <!-- <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px"> -->
+</div>
+    </div>
+    <div class="rightrow">
+      <div class="column">
+        <div class="overLayText"> Acceptance Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Staging Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Pick-up scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+        <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+      </div>
+      <div class="column">
+          <div class="overLayText"> Drop scan</div>
+          <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText"> Departure scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Staging Scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Pick-up scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+              <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+            </div>
+            <div class="column">
+                <div class="overLayText"> Drop scan</div>
+                <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+              </div>
+              <div class="column">
+                  <div class="overLayText"> Departure scan</div>
+                  <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                  <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                </div>
+         
+        <div class="column">
+            <div class="overLayText">Drop scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText">Departure Scan</div>
+          <img src="./img/image.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="leftrow">
+      <div class="leftcolumn">
+        <div class="overLayText">UA1011921</div>
+        <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+      </div>
+      <div class="leftcolumn">
+          <div class="overLayText">UA776-15</div>
+          <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+        </div>
+<div class="leftcolumn">
+    <div class="overLayText">IN</div>
+  <!-- <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px"> -->
+</div>
+    </div>
+    <div class="rightrow">
+      <div class="column">
+        <div class="overLayText"> Acceptance Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Staging Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Pick-up scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+        <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+      </div>
+      <div class="column">
+          <div class="overLayText"> Drop scan</div>
+          <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText"> Departure scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Staging Scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Pick-up scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+              <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+            </div>
+            <div class="column">
+                <div class="overLayText"> Drop scan</div>
+                <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+              </div>
+              <div class="column">
+                  <div class="overLayText"> Departure scan</div>
+                  <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                  <img src="./img/image2.png.png" alt="Snow" style="width:100%;height:25px">
+                </div>
+         
+        <div class="column">
+            <div class="overLayText">Drop scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText">Departure Scan</div>
+          <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="leftrow">
+      <div class="leftcolumn">
+        <div class="overLayText">UA1011921</div>
+        <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+      </div>
+      <div class="leftcolumn">
+          <div class="overLayText">UA776-15</div>
+          <!-- <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+        </div>
+<div class="leftcolumn">
+    <div class="overLayText">IN</div>
+  <!-- <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px"> -->
+</div>
+    </div>
+    <div class="rightrow">
+      <div class="column">
+        <div class="overLayText"> Acceptance Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Staging Scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+      <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+    </div>
+    <div class="column">
+        <div class="overLayText">Pick-up scan</div>
+        <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+        <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+      </div>
+      <div class="column">
+          <div class="overLayText"> Drop scan</div>
+          <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText"> Departure scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Staging Scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+            <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+          </div>
+          <div class="column">
+              <div class="overLayText">Pick-up scan</div>
+              <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+              <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+            </div>
+            <div class="column">
+                <div class="overLayText"> Drop scan</div>
+                <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+              </div>
+              <div class="column">
+                  <div class="overLayText"> Departure scan</div>
+                  <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+                  <img src="./img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                </div>
+         
+        <div class="column">
+            <div class="overLayText">Drop scan</div>
+            <div class="infirmation"><img src="./img/2000px-Wikipedia's_W.svg.png" alt="Forest" style="width:7%;    height: 11px;"></div>
+          <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+        <div class="column">
+            <div class="overLayText">Departure Scan</div>
+          <img src="./img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+        </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</body>
+</html>

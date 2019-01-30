@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="myApp" ng-controller="dataCtrl">
+
+<h2>My add and delete opration</h2>
+
+<form ng-submit="dataAdd()">
+    <input type="text" ng-model="userNameInput" size="50" placeholder="Add New">
+    <input type="text" ng-model="userDob" size="50" placeholder="Add New">
+    <input type="text" ng-model="userage" size="50" placeholder="Add New">
+    <input type="text" ng-model="userId" size="50" placeholder="Add New">
+    <input type="text" ng-model="userStation" size="50" placeholder="Add New">
+    <input type="text" ng-model="userBegNumber" size="50" placeholder="Add New">
+    <input type="text" ng-model="flightNumber" size="50" placeholder="Add New">
+    <input type="text" ng-model="departureDate" size="50" placeholder="Add New">
+    <input type="text" ng-model="landingTime" size="50" placeholder="Add New">
+    <input type="text" ng-model="weight" size="50" placeholder="Add New">
+    <input type="submit" value="Add New">
+</form>
+
+<br>
+
+<div ng-repeat="x in dataList">
+    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.dataText"></span>
+
+    <input type="checkbox" ng-model="x.done1"> <span ng-bind="x.userDob"></span>
+    <input type="checkbox" ng-model="x.done2"> <span ng-bind="x.userage"></span>
+    <input type="checkbox" ng-model="x.done3"> <span ng-bind="x.userId"></span>
+    <input type="checkbox" ng-model="x.done4"> <span ng-bind="x.userStation"></span>
+    <input type="checkbox" ng-model="x.done5"> <span ng-bind="x.userBegNumber"></span>
+    <input type="checkbox" ng-model="x.done6"> <span ng-bind="x.flightNumber"></span>
+    <input type="checkbox" ng-model="x.done7"> <span ng-bind="x.landingTime"></span>
+    <input type="checkbox" ng-model="x.done8"> <span ng-bind="x.weight"></span>
+</div>
+
+<p><button ng-click="remove()">Remove marked</button></p>
+
+<script>
+var app = angular.module('myApp', []); 
+app.controller('dataCtrl', function($scope) {
+    $scope.dataList = [{
+    //     dataText:'Clean House', 
+    
+    // userDob:"",
+    //       userage:"",
+    //       userId:$scope.userId,
+    //       userStation:$scope.userStation,
+    //       userBegNumber:$scope.userBegNumber,
+    //       flightNumber:$scope.flightNumber,
+    //       departureDate:$scope.departureDate,
+    //       landingTime:$scope.landingTime,
+    //       weight:$scope.weight,
+
+    done:false,
+    done1:false,
+    done2:false,
+    done3:false,
+    done4:false,
+    done5:false,
+    done6:false,
+    done7:false,
+    done8:false
+
+    }];
+
+    $scope.dataAdd = function() {
+        $scope.dataList.push({
+          dataText:$scope.userNameInput,
+          userDob:$scope.userDob,
+          userage:$scope.userage,
+          userId:$scope.userId,
+          userStation:$scope.userStation,
+          userBegNumber:$scope.userBegNumber,
+          flightNumber:$scope.flightNumber,
+          departureDate:$scope.departureDate,
+          landingTime:$scope.landingTime,
+          weight:$scope.weight, done:false,
+          done1:false,
+    done2:false,
+    done3:false,
+    done4:false,
+    done5:false,
+    done6:false,
+    done7:false,
+    done8:false
+
+        });
+        
+        $scope.userNameInput = "";
+        $scope.userDob="";
+        $scope.userage="";
+        $scope.userId="";
+        $scope.userStation="";
+        $scope.userBegNumber="";
+        $scope.flightNumber="";
+        $scope.departureDate="";
+        $scope.landingTime="";
+        $scope.weight="";
+    };
+console.log($scope.dataAdd);
+    $scope.remove = function() {
+        var oldList = $scope.dataList;
+        $scope.dataList = [];
+        angular.forEach(oldList, function(x) {
+            if (!x.done||!x.done1||!x.done||!x.done3||!x.done4||!x.done5||!x.done6||!x.done7||x.done8) $scope.dataList.push(x);
+        });
+    };
+});
+</script>
+
+</body>
+</html>
