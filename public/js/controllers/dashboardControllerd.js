@@ -51,8 +51,8 @@ app.controller('animalTransportDashboard', function($scope, $http) {
     method : "GET",
     url : "http://localhost:8080/getListAnimal"
   }).then(function mySuccess(res) {
-      $scope.myWelcome = res.data;
+      $scope.transportDashboardData = res.data;
     }, function myError(res) {
-      $scope.myWelcome = res.statusText;
+      $scope.transportDashboardData = res.statusText;
   });
 });

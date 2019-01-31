@@ -1,30 +1,411 @@
-
 <html>
-    <head>
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-            <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
             <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.14/pulltorefresh.min.js"></script> -->
-            <script type="text/javascript" src="../js/app.js"></script>
-            <script type="text/javascript" src="../js/controllers/dashboardControllerd.js"></script>
-            
-<head>
-<!-- <% include head.html %> -->
-<body ng-app="animalwells" ng-controller="animalTransportDashboard" >
-        <div class="abc" >
-                <table >
-                        <tr ng-repeat="x in myWelcome">
-                          <td>{{x}}</td>
-                        </tr>
-                        </table>
-        </div>
+        <script type="text/javascript" src="../js/app.js"></script>
+        <script type="text/javascript" src="../js/controllers/dashboardControllerd.js"></script>
 
+        <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <head>
+                <!-- <% include head.html %> -->
+
+        <body ng-app="animalwells" ng-controller="animalTransportDashboard" data-ng-init="init()">
+
+
+                <div class="mainContainer">
+                        <div class="header">
+                                        <div class="parent-wrapper">
+                                                        <div class="parent">
+                                                                        <div class="headerLeftChild">Animal Transport Dashboard</div>
+                                                                        <div class="headerRightChild"><div class="logo">
+                                                                                        <img src="../img/united-airlines-7.svg" alt="Forest" style="width:100%;margin-top: 20px;">
+                                                                                </div></div>
+                                                                </div>
+                                        </div>
+
+                                
+
+                        </div>
+                        <div class="searchHeader">
+                                <div class="searchHeaderRow">
+                                        <div class="parent-wrapper">
+                                                <div class="parent">
+                                                        <div class="child">
+                                                                <label class="textLabelWrap"> Station</label>
+                                                                <div class="dropDownWrap">
+                                                                        <div class="select-container">
+                                                                                <div class="custom-select" style="width:75px;">
+                                                                                        <!-- <label>amimal</label>   -->
+                                                                                        <select>
+                                                                                                <option value="0">Select</option>
+                                                                                                <option value="1">BLR</option>
+                                                                                                <option value="2">CCU</option>
+
+                                                                                        </select>
+                                                                                </div>
+                                                                        </div>
+
+
+                                                                </div>
+                                                        </div>
+                                                        <div class="child">
+                                                                <label class="textLabelWrap"> Gate</label>
+                                                                <div class="dropDownWrap">
+                                                                        <div class="select-container">
+                                                                                <div class="custom-select" style="width:75px;">
+                                                                                        <!-- <label>amimal</label>   -->
+                                                                                        <select>
+                                                                                                <option value="0">select</option>
+                                                                                                <option value="1">01</option>
+                                                                                                <option value="1">02</option>
+                                                                                                <option value="2">03</option>
+                                                                                                <option value="3">04</option>
+                                                                                                <option value="3">05</option>
+
+                                                                                        </select>
+                                                                                </div>
+                                                                        </div>
+
+
+                                                                </div>
+                                                        </div>
+                                                        <div class="child">
+                                                                <label class="textLabelWrap"> Pet Type</label>
+                                                                <div class="dropDownWrap">
+                                                                        <div class="select-container">
+                                                                                <div class="custom-select" style="width:75px;">
+                                                                                        <!-- <label>amimal</label>   -->
+                                                                                        <select>
+                                                                                                <option value="0">All
+                                                                                                        Pets</option>
+                                                                                                <option value="1">etSafe
+                                                                                                        Pets</option>
+                                                                                                <option value="2">Military
+                                                                                                        Pets</option>
+
+                                                                                        </select>
+                                                                                </div>
+                                                                        </div>
+
+
+                                                                </div>
+                                                        </div>
+                                                        <div class="child">
+                                                                <label class="textLabelWrap"> From time</label>
+                                                                <div class="dropDownWrap">
+                                                                        <div class="select-container">
+                                                                                <div class="custom-select" style="width:75px;">
+                                                                                        <!-- <label>amimal</label>   -->
+                                                                                        <select>
+                                                                                                <option value="0">Select</option>
+                                                                                                <option value="1">8:30
+                                                                                                        am</option>
+                                                                                                <option value="2">12:50
+                                                                                                        pm</option>
+
+                                                                                        </select>
+                                                                                </div>
+                                                                        </div>
+
+
+                                                                </div>
+                                                        </div>
+                                                        <div class="child">
+                                                                <label class="textLabelWrap">To time</label>
+                                                                <div class="dropDownWrap">
+                                                                        <div class="select-container">
+                                                                                <div class="custom-select" style="width:75px;">
+                                                                                        <!-- <label>amimal</label>   -->
+                                                                                        <select>
+                                                                                                <option value="0">Select</option>
+                                                                                                <option value="1">8:30
+                                                                                                        am</option>
+                                                                                                <option value="2">12:50
+                                                                                                        pm</option>
+
+                                                                                        </select>
+                                                                                </div>
+                                                                        </div>
+
+
+                                                                </div>
+                                                        </div>
+                                                        <div class="child">
+                                                                <label class="textLabelWrap"> From date</label>
+                                                                <div class="dropDownWrap">
+                                                                        <input type="date" name="dateofbirth" id="dateofbirth">
+
+
+                                                                </div>
+                                                        </div>
+                                                        <div class="child">
+                                                                <label class="textLabelWrap">To date</label>
+                                                                <div class="dropDownWrap">
+                                                                        <input type="date" name="dateofbirth" id="dateofbirth">
+
+
+                                                                </div>
+                                                        </div>
+                                                        <div class="child">
+                                                                        <label class="textLabelWrap"> Flight number</label>
+                                                                        <div class="inputWrap">
+                                                                                        <input type="text" ng-model="f.flightNumber" class="form-control" placeholder="Bag Tag Number" aria-describedby="Bag Tag Number" />
+
+                                                                              
         
+                                                                        </div>
+                                                                </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="searchHeaderRow">
+                                        <div class="parent-wrapper">
+                                                <div class="parent">
+                                                        
+                                                        <div class="child">
+                                                                <label class="textLabelWrap">Passenger Name</label>
+                                                                <div class="inputWrap">
+                                                                        <input type="text" placeholder="Passenger Name">
 
 
-       
-            
-        </div>
-        
-    </body>
+                                                                </div>
+                                                        </div>
+                                                        <div class="child">
+                                                                <label class="textLabelWrap"> Bag tag number</label>
+                                                                <div class="inputWrap">
+                                                                        <input type="text" placeholder="Bag tag number">
+
+
+                                                                </div>
+                                                        </div>
+                                                        <div class="child">
+                                                                <label class="textLabelWrap">Cargo Airway Bill Number</label>
+                                                                <div class="inputWrap">
+                                                                        <input type="text" placeholder="Cargo Airway Bill Number">
+
+
+                                                                </div>
+                                                        </div>
+                                                        <div class="child">
+                                                                <label class="textLabelWrap"> User ID</label>
+                                                                <div class="inputWrap">
+                                                                                
+                                                                                <input type="text" ng-model="f.userID" class="form-control" placeholder="Bag Tag Number" aria-describedby="Bag Tag Number" />
+
+                                                                        <!-- <input type="text" placeholder="User Id"> -->
+                                                                </div>
+                                                        </div>
+                                                        <div class="child">
+                                                                <button>Submit</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+
+
+
+
+
+                </div>
+                <div class="timerow">
+                        <div class="timecolumn">
+                                <h5>01:00</h5>
+
+                        </div>
+                        <div class="timecolumn">
+                                <h5>02:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>03:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>04:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>05:00</h5>
+                        </div>
+
+                        <div class="timecolumn">
+                                <h5>06:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>07:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>08:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>09:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>10:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>11:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>12:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>13:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>14:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>15:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>16:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>17:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>18:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>19:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>20:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>21:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>22:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>23:00</h5>
+                        </div>
+                        <div class="timecolumn">
+                                <h5>24:00</h5>
+                        </div>
+                </div>
+
+                <div class="tooltip">
+                        <span class="tooltiptext">Tooltip text</span>
+                </div>
+
+                </div>
+                <div>
+                        <div class="row" ng-repeat="x in transportDashboardData | filter:f">
+                                <div class="leftrow">
+                                        <div class="leftcolumn">
+                                                <div class="overLayText">{{x.userID}}</div>
+                                                <!-- <img src="../img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+                                        </div>
+                                        <div class="leftcolumn">
+                                                <div class="overLayText">{{x.flightNumber}}</div>
+                                                <!-- <img src="../img/image.png.png" alt="Snow" style="width:100%;height:25px"> -->
+                                        </div>
+                                        <div class="leftcolumn">
+                                                <div class="overLayText">IN</div>
+                                                <!-- <img src="../img/image2.png.png" alt="Forest" style="width:100%;height:25px"> -->
+                                        </div>
+                                </div>
+
+                                <div class="rightrow">
+                                        <a href="./AcceptanceScanView.html" style="text-decoration:none" target="_blank">
+                                                <div class="column">
+                                                        <div class="tooltip"> Acceptance Scan
+                                                                <!-- <div class="tooltip"> -->
+                                                                <span class="tooltiptext">Tooltip text</span>
+                                                                <!-- </div> -->
+                                                        </div>
+                                                        <div class="infirmation"><img src="../img/2000px-Wikipedia's_W.svg.png"
+                                                                        alt="Forest" style="width:7%;    height: 11px;">
+                                                                <div class="hoverText">give me some infirmation</div>
+                                                        </div>
+                                                        <div class="imageoverlay">
+                                                                <img src="../img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                                                        </div>
+
+                                                </div>
+                                        </a>
+                                        <div class="column">
+                                                <div class="overLayText">Staging Scan</div>
+                                                <div class="infirmation"><img src="../img/2000px-Wikipedia's_W.svg.png"
+                                                                alt="Forest" style="width:7%;    height: 11px;"></div>
+                                                <img src="../img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+                                        </div>
+                                        <div class="column">
+                                                <div class="overLayText">Pick-up scan</div>
+                                                <div class="infirmation"><img src="../img/2000px-Wikipedia's_W.svg.png"
+                                                                alt="Forest" style="width:7%;    height: 11px;"></div>
+                                                <img src="../img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                                        </div>
+                                        <div class="column">
+                                                <div class="overLayText"> Drop scan</div>
+                                                <div class="infirmation"><img src="../img/2000px-Wikipedia's_W.svg.png"
+                                                                alt="Forest" style="width:7%;    height: 11px;"></div>
+                                                <img src="../img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                                        </div>
+                                        <div class="column">
+                                                <div class="overLayText"> Departure scan</div>
+                                                <div class="infirmation"><img src="../img/2000px-Wikipedia's_W.svg.png"
+                                                                alt="Forest" style="width:7%;    height: 11px;"></div>
+                                                <img src="../img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                                        </div>
+                                        <div class="column">
+                                                <div class="overLayText">Staging Scan</div>
+                                                <div class="infirmation"><img src="../img/2000px-Wikipedia's_W.svg.png"
+                                                                alt="Forest" style="width:7%;    height: 11px;"></div>
+                                                <img src="../img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+                                        </div>
+                                        <div class="column">
+                                                <div class="overLayText">Pick-up scan</div>
+                                                <div class="infirmation"><img src="../img/2000px-Wikipedia's_W.svg.png"
+                                                                alt="Forest" style="width:7%;    height: 11px;"></div>
+                                                <img src="../img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                                        </div>
+                                        <div class="column">
+                                                <div class="overLayText"> Drop scan</div>
+                                                <div class="infirmation"><img src="../img/2000px-Wikipedia's_W.svg.png"
+                                                                alt="Forest" style="width:7%;    height: 11px;"></div>
+                                                <img src="../img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                                        </div>
+                                        <div class="column">
+                                                <div class="overLayText"> Departure scan</div>
+                                                <div class="infirmation"><img src="../img/2000px-Wikipedia's_W.svg.png"
+                                                                alt="Forest" style="width:7%;    height: 11px;"></div>
+                                                <img src="../img/image.png.png" alt="Snow" style="width:100%;height:25px">
+                                        </div>
+
+                                        <div class="column">
+                                                <div class="overLayText">Drop scan</div>
+                                                <div class="infirmation"><img src="../img/2000px-Wikipedia's_W.svg.png"
+                                                                alt="Forest" style="width:7%;    height: 11px;"></div>
+                                                <img src="../img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+                                        </div>
+                                        <div class="column">
+                                                <div class="overLayText">Departure Scan</div>
+                                                <img src="../img/image2.png.png" alt="Forest" style="width:100%;height:25px">
+                                        </div>
+
+                                </div>
+                        </div>
+                </div>
+
+                </div>
+
+
+
+
+
+
+
+
+                </div>
+                <script type="text/javascript" src="../js/main.js"></script>
+        </body>
+
 </html>

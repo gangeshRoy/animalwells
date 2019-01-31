@@ -1,0 +1,465 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    margin: 0;
+  }
+.mainContainer{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  background-color: #0c0c35;
+  
+
+
+}
+.infirmation img {border: 1px solid pink;
+  border-radius: 50px;
+  margin-top: 11px;
+}
+.logo img{
+  height:45px;
+}
+img{
+  height:30px ;
+}
+.mainInputContainer{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  background-color: #0c0c35;
+  padding:20px 40px;
+}
+.logo{
+  position: absolute;
+  right: 25px;
+  /* height: 97px; */
+  top: -18px;
+  width: 100px;
+}
+.header{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #000000;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: left;
+  padding: 10px 25px;
+  font-size: 25px;
+  font-weight: 900;
+  color: #fff;
+  z-index: 999;
+
+}
+.marginTop{
+  margin-top:15px;
+}
+ 
+  
+  .row{
+  width:100%;
+  height:auto;
+  background-color: #fff;
+  position: relative;
+
+  
+  }
+    
+  .timerow{
+    width: 100%;
+    height: auto;
+    background-color:transparent;
+    position: relative;
+    padding-left: 148px;
+    padding-right: 21px;
+  
+    
+    }
+    .timerow::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  .arrow-image {
+    background: url('../img/image.png');
+    background-color: #cccccc;
+    height: 50px;
+  
+  width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .custom-select {
+    position: relative;
+    font-family: Arial;
+    width:75px;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: #fff;
+  }
+  .select-selected {
+    font-size: 10px;
+    color: #000000 !important;
+    padding: 5px 6px !important;
+  }
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 9px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000000 transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000000 transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #000000;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  .cantainer{
+   display: flex;
+   
+  background-color:#0c0c35;
+}
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .select-container {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .collumn{margin-right:20px;}
+  .select-container .collumn {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    margin-right: 20px;
+    font-size: 30px;
+  }.flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .labeltext{
+    color: #fff;
+    line-height: 25px;
+    padding-right: 8px;
+    font-size: 11px;
+    font-family: monospace;
+  }
+  .buttonHolder{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    flex-direction: row-reverse;
+    /* position: absolute; */
+    padding-right: 10px;
+    padding-top: 7px;
+
+
+  }
+ 
+  button{    height: 36px;
+    width: 83px;
+    border-radius: 3px;}
+      input{
+      height: 25px;
+      width: -webkit-fill-available;
+    }
+    .column {
+      float: left;
+      width: 8%;
+      padding: 5px;
+      position: relative;
+      cursor: pointer;
+      float: left;
+      width: 8%;
+      padding: 5px;
+      position: relative;
+      cursor: pointer;
+      margin-left: 3px;
+      margin-right: 7px;
+    }
+    .leftcolumn {
+      float: left;
+      width: 33.3%;
+      padding: 20px;
+      position: relative;
+      cursor: pointer;
+    }
+    .leftrow{
+      float: left;
+      width: 12%;
+      padding: 5px;
+      cursor: pointer;
+      height: auto;
+    }
+    .rightrow{
+      float: left;
+      width: 88%;
+      padding: 5px;
+      position: relative;
+      cursor: pointer;
+    }
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .overLayText{
+      position: absolute;
+      margin: auto;
+      top: 13px;
+      bottom: 0px;
+      left: 0px;
+      right: 4px;
+      font-size: 8px;
+      text-align: center;
+      font-weight: bold;
+    }
+.infirmation{
+ 
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 37px;
+  left: 0;
+  right: -88px;
+  font-size: 8px;
+  text-align: center;
+  font-weight: bold;
+  max-height: 50px;
+}
+    [type="date"] {
+      background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+    }
+    [type="date"]::-webkit-inner-spin-button {
+      display: none;
+    }
+    [type="date"]::-webkit-calendar-picker-indicator {
+      opacity: 0;
+    }
+    
+ 
+    label {
+      display: block;
+    }
+    .fromDate input {
+      border: 1px solid #c4c4c4;
+      border-radius: 5px;
+      background-color: #fff;
+      padding: 3px 5px;
+      box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+      width: 112px;
+    }
+
+    .timecolumn {
+      float: left;
+      width: 4.16666666667%;
+      padding: 10px 5px;
+      height: 30px;
+    }
+    
+.timerow .timecolumn:nth-child(odd) {background: rgb(224, 15, 15) !important ;}
+    .timerow .timecolumn:nth-child(even) {background: rgb(15, 241, 53)}
+    .hoverText{
+display:none;
+    }
+    .infirmation:hover .hoverText{
+
+display:block;
+position: absolute;
+top: -18px;
+left: 55px;
+
+    }
+
+    .textwithImagecolumn{
+      float: left;
+      position: relative;
+      cursor: pointer;
+      width: 90%;
+      padding: 5px;
+    
+     
+    }
+    .iconcolumn{
+      float: left;
+      width: 10%;
+      position: relative;
+      cursor: pointer;
+      padding: 5px;
+    }
+    .showTextInformation{
+height:100px;
+width:150px;
+background-color: darkgoldenrod;
+color:black;
+text-align: center;
+vertical-align: auto;
+    }
+    .purple-square-container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .purple-square {
+      background-color: #B10DC9;
+      width: 300px;
+      height: 300px;
+    }
+
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      /* top: 17px; */
+      font-size: 8px;
+      font-weight: 900;
+      z-index: 100;
+      bottom: 2px;
+
+    }
+    
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: yellow;
+      color: red;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 17px;
+      left: 50%;
+      margin-left: -60px;
+    }
+    
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent;
+    }
+    
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+    .imageoverlay{
+      position: absolute;
+    top: 3px;
+    margin-right: 4px;
+
+    }
+    a {text-decoration: none;}
+
+    .parent-wrapper {
+        height: auto;
+        width: 100%;
+        margin-top:10px;
+        margin-bottom:10px;
+        /* border: 1px solid black; */
+        padding:0px 5px;
+      }
+      .parent {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .child {
+        display: inline-block;
+        background: transparent;
+        margin: 10px 0 0 10px;
+        height: 45px;
+        height: 45px;
+        padding: 10px 10px;
+      }
+      .searchHeader{
+          width:100%;
+          height:auto;
+          margin-top:60px;
+      }
+      .searchHeaderRow{
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        position: relative;
+      }
+      .textLabelWrap{
+        display: inline-flex;
+        color: #fff;
+        line-height: 25px;
+        padding-right: 8px;
+        font-size: 11px;
+        font-family: monospace;
+      }
+      .dropDownWrap{
+          display: inline-flex;
+      }
+      .inputWrap{
+        display: inline-flex;
+      }
+      .headerLeftChild{
+        display: inline-block;
+        background: transparent;
+        
+      }
+      .headerRightChild{
+        display: inline-block;
+        background: transparent;
+      
+      }
